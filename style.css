@@ -33,3 +33,29 @@ img {
     border-radius: 30%;
     width: 8rem;
 }
+
+a {
+    color: rgb(40, 40, 150);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(225, 0, 0);
+}
+
+.card {
+    animation: card_spin 1.5s linear infinite;
+}
+
+@keyframes card_spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card:hover {
+    transform: rotate(0);
+    animation-play-state: paused;
+    border-color: green;
+}
